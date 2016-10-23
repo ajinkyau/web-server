@@ -14,7 +14,7 @@ app.use(middleware.logger);
 // /about
 // About Us
 app.get('/about', middleware.requireAuthentication, function(req, res){
-    res.send('We at SystemServ are working in multiple domains like web / mobile development, 3D Printing, Quantum Computing, Internet Of Things (IOT)!');
+    res.send('This is about page');
 });
 
 app.use(express.static(__dirname + '/public'));
